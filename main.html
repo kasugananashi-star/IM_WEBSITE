@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hisoka The Magician</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo">Hisoka The Magician</a>
+  <nav>
+    <a href="#" onclick="showSection('home')" class="active">Home</a>
+    <a href="#" onclick="showSection('personality')">Personality</a>
+    <a href="#" onclick="showSection('abilities')">Abilities</a>
+    <a href="#" onclick="showSection('nen')">Nen</a>
+    <a href="#" onclick="showSection('plot')">Plot</a>
+  </nav>
+</header>
+
+<section class="page active" id="home">
+  <div class="home">
+    <div class="home-img">
+      <img src="https://images.alphacoders.com/113/1136245.jpg" alt="Hisoka">
+    </div>
+    <div class="home-content">
+      <h1>HISOKA <span>MOROW</span></h1>
+      <h3>Magician & Nen User</h3>
+      <p>
+      Hisoka Morow is a Pro Hunter and the former No. 4 member of the Phantom Troupe, 
+      ranking third in physical strength within the group. 
+      He constantly seeks powerful opponents and often spares individuals with great potential such as Gon and Killua so they can grow strong enough to challenge him in the future.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="personality">
+  <h2>Personality</h2>
+  <p>
+    Hisoka is a self-serving, manipulative, and chaotic character driven by a love of fighting strong opponents. 
+    He enjoys killing and causing pain, but only targets those he deems “worthy,” making him more amoral than purely evil. He spares certain individuals, like Gon and Killua, 
+    to allow them to grow into more challenging opponents. Hisoka’s actions are guided by what amuses him in the present or future, often helping others if it promises entertainment or a better fight later. 
+    He is unpredictable, enjoys playing cruel jokes, and values fun and challenge above all else.
+  </p>
+</section>
+
+<section class="page" id="abilities"> 
+  <h2>Abilities & Powers</h2> 
+  <p>
+    Hisoka, a Floor Master and skilled Hunter, is notorious for his ruthless and deceptive fighting style. 
+    Combining immense physical strength, speed, agility, and Nen mastery, he can adapt to any situation, defeat multiple opponents effortlessly, and employ creative strategies in combat. 
+    A tactical genius and master of hand-to-hand fighting and weapons, he wields cards with deadly precision and uses Nen techniques like Bungee Gum and Shu to trap and incapacitate foes. 
+    Hisoka is also highly perceptive, capable of sensing hidden opponents, analyzing talent, and gathering intelligence through stealth and reconnaissance, making him as dangerous outside combat as he is in battle.
+  </p> 
+</section>
+
+<section class="page" id="nen">
+  <h2>Nen</h2>
+  <p>
+    Hisoka is a highly skilled Transmuter with a dark, intimidating aura, proficient in multiple Nen categories including Transmutation, Conjuration, Emission, Enhancement, and Manipulation. 
+    His signature ability, Bungee Gum, showcases his mastery of elastic aura, allowing precise, subtle attacks and traps over distance. He combines Nen techniques such as Shu and In to enhance attacks, set lethal traps, and protect himself, demonstrating extreme adaptability and tactical genius. 
+    Hisoka’s proficiency extends to Ren, Gyo, Ken, Ten, Zetsu, and Ko, giving him durability, heightened perception, and control in combat. Beyond combat, he applies abstract Nen knowledge creatively, like predicting Nen types, using Memory Overload, and exploiting Nen after death, cementing him as a formidable and unpredictable fighter.
+  </p>
+</section>
+
+<section class="page" id="plot">
+  <h2>Plot</h2>
+  <p>
+    Hisoka is a highly skilled Transmuter with a dark, intimidating aura, proficient in multiple Nen categories including Transmutation, Conjuration, Emission, Enhancement, and Manipulation. His signature ability, Bungee Gum, showcases his mastery of elastic aura, allowing precise, subtle attacks and traps over distance. 
+    He combines Nen techniques such as Shu and In to enhance attacks, set lethal traps, and protect himself, demonstrating extreme adaptability and tactical genius. Hisoka’s proficiency extends to Ren, Gyo, Ken, Ten, Zetsu, and Ko, giving him durabilitHisoka quickly establishes himself as a deadly and unpredictable force during the Hunter Exam, 
+    killing and manipulating examinees at will while showing selective interest in those with potential, like Gon and Leorio. He excels in combat, strategy, and observation, often testing opponents’ abilities and leaving a lasting impression on those around him. In the Heavens Arena, he blocks Gon and Killua until they learn Nen, relishes challenging fights, 
+    and demonstrates his mastery of Bungee Gum and tactical deception. During the Yorknew City arc, Hisoka manipulates the Phantom Troupe, uses Texture Surprise and strategic foresight to orchestrate events, and sets up a personal showdown with Chrollo. On Greed Island, he continues to aid or oppose others based on his amusement, demonstrating teamwork, cunning, and deadly skill while searching for Chrollo and testing Gon and Killua. 
+    Throughout, Hisoka is driven by bloodlust, fascination with strong fighters, and the thrill of combat rather than loyalty or morality.y, heightened perception, and control in combat. Beyond combat, he applies abstract Nen knowledge creatively, like predicting Nen types, using Memory Overload, and exploiting Nen after death, cementing him as a formidable and unpredictable fighter.
+  </p>
+</section>
+
+<script>
+  function showSection(id) {
+    let sections = document.querySelectorAll('.page');
+    let links = document.querySelectorAll('nav a');
+
+    sections.forEach(section => section.classList.remove('active'));
+    links.forEach(link => link.classList.remove('active'));
+
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

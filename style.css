@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+
+.logo{
+  font-size: 3rem;
+  color: purple;
+  font-weight: bold;
+}
+
+nav a{
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 3rem;
+}
+
+nav a.active,
+nav a:hover{
+  color: purple;
+  border-bottom: 2px solid purple;
+}
+
+.page{
+  display: none;
+  height: 100vh;
+  padding: 12rem 9%;
+}
+
+.page.active{
+  display: block;
+}
+
+.home{
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+.home-img img{
+  width: 32rem;
+  height: 42rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px purple;
+}
+
+.home-content h1{
+  font-size: 4.8rem;
+}
+
+.home-content span{
+  color: purple;
+}
+
+.home-content h3{
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+
+.home-content p{
+  font-size: 1.6rem;
+  max-width: 45rem;
+}
+
+.page h2{
+  font-size: 4rem;
+  color: purple;
+  margin-bottom: 2rem;
+}
+
+.page p{
+  font-size: 1.8rem;
+  max-width: 60rem;
+}
